@@ -1,0 +1,49 @@
+.tovar {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+  background: @white;
+  transition: @transition-time;
+  box-shadow: @shadow;
+  border-radius: @border-radius;
+  overflow: hidden;
+
+  &__img {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(min-width: @screen-sm) {
+      max-width: 252px;
+      width: 115%;
+      height: auto;
+    }
+  }
+
+  &__percent {
+    position: absolute;
+    top: 15px;
+    left: -35px;
+    margin: 0;
+    z-index: 9;
+    width: 140px;
+    height: 40px;
+    transform: rotate(-45deg);
+
+    @media(min-width: @screen-sm) {
+      top: inherit;
+      left: -35px;
+      bottom: 15px;
+      transform: rotate(45deg);
+    }
+  }
+
+  @media(max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

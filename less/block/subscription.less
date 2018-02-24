@@ -1,0 +1,43 @@
+.subscription {
+  margin-top: 40px;
+
+  &__row {
+    &:extend(.row);
+  }
+
+  &__column {
+    &:extend(.col-md-6);
+
+    @media(max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    .btn();
+    display: block;
+    margin-left: auto;
+    max-width: 137px;
+    width: 100%;
+    font: 15px "Arial", sans-serif;
+    text-transform: inherit;
+    background: @gray;
+
+   @media(max-width: 768px) {
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      color: @white;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+
+    strong {
+      color: @black;
+    }
+  }
+}

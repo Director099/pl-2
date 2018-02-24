@@ -1,0 +1,285 @@
+@@include('_include/header.html')
+      <ul class="profile-navigation">
+        <li>
+          <a class="active" href="admin.html">Список профилей</a>
+        </li>
+        <li>
+          <a href="setting.html">Настройки</a>
+        </li>
+        <li>
+          <a href="history.html">История платежей</a>
+        </li>
+        <li>
+          <a href="questions.html">Задать вопрос</a>
+        </li>
+      </ul>
+      <div class="admin-setting">
+        <div class="admin-setting__nav">
+          <ul class="setting-nav" role="tablist">
+            <li class="setting-nav__item">
+              <a class="active" href="profile.html">
+                <svg class="tab__icon" width="18" height="18">
+                  <use xlink:href="#user"/>
+                </svg>
+                <span>Профиль</span>
+              </a>
+            </li>
+            <li class="setting-nav__item">
+              <a href="subscription.html">
+                <svg class="tab__icon" width="18" height="18">
+                  <use xlink:href="#dollar"/>
+                </svg>
+                <span>Подписка</span>
+              </a>
+            </li>
+          </ul>
+          <a class="admin-setting__back" href="admin.html">Вернуться к списку
+            <svg class="tab__icon" width="18" height="18">
+              <use xlink:href="#right-arrow"/>
+            </svg>
+          </a>
+        </div>
+        <form class="form-profile" action="">
+          <fieldset class="form-profile__all-group">
+            <legend class="form-profile__title">Данные профиля:</legend>
+            <div class="form-profile__row">
+              <div class="form-profile__column">
+                 <label class="form-horizont">
+                   <span class="form-horizont__text">Имя</span>
+                   <input class="form-horizont__control" type="text" value="Ольга">
+                 </label>
+                 <div class="form-horizont">
+                   <span class="form-horizont__text">Район</span>
+                   <select class="selectpicker" data-width="100%">
+                     <option>Дзержинский район</option>
+                     <option>Железнодорожный район</option>
+                     <option>Заельцовский район</option>
+                     <option>Калининский район</option>
+                     <option>Кировский район</option>
+                     <option>Ленинский район</option>
+                     <option>Октябрьский район</option>
+                     <option>Первомайский район</option>
+                     <option>Советский район</option>
+                     <option>Центральный район</option>
+                   </select>
+                 </div>
+                 <div class="form-horizont">
+                   <span class="form-horizont__text">Время звонка</span>
+                   <input class="form-horizont__control" type="text" placeholder="С 18:00 до 06:00" required>
+                 </div>
+                 <div class="form-horizont">
+                   <span class="form-horizont__text">30 мин.</span>
+                   <select class="selectpicker" data-width="100%">
+                     <option>Да</option>
+                     <option>Нет</option>
+                   </select>
+                 </div>
+                 <div class="form-horizont">
+                   <span class="form-horizont__text">Выезд</span>
+                   <select class="selectpicker" data-width="100%">
+                     <option>6000</option>
+                     <option>5500</option>
+                     <option>5000</option>
+                     <option>4500</option>
+                     <option>4000</option>
+                     <option>3500</option>
+                     <option>3000</option>
+                     <option>2500</option>
+                     <option>2000</option>
+                   </select>
+                 </div>
+                 <div class="form-horizont">
+                   <span class="form-horizont__text">2 часа</span>
+                   <select class="selectpicker" data-width="100%">
+                     <option>10 000 руб.</option>
+                     <option>9 000 руб.</option>
+                     <option>8 000 руб.</option>
+                     <option>7 000 руб.</option>
+                     <option>6 000 руб.</option>
+                     <option>5 000 руб.</option>
+                   </select>
+                 </div>
+                 <div class="form-horizont">
+                   <span class="form-horizont__text">Ночь</span>
+                   <select class="selectpicker" data-width="100%">
+                     <option>10 000 руб.</option>
+                     <option>9 000 руб.</option>
+                     <option>8 000 руб.</option>
+                     <option>7 000 руб.</option>
+                     <option>6 000 руб.</option>
+                     <option>5 000 руб.</option>
+                   </select>
+                 </div>
+              </div>
+              <div class="form-profile__column">
+                <label class="form-horizont">
+                  <span class="form-horizont__text">Телефон</span>
+                  <input class="form-horizont__control" id="phone" type="text" maxlength="11" placeholder="Ваш номер">
+                </label>
+                <div class="form-horizont">
+                  <span class="form-horizont__text">Улица</span>
+                  <input class="form-horizont__control" type="text" value="Ленина 101" required>
+                </div>
+                <div class="form-horizont">
+                  <span class="form-horizont__text">Место встречи</span>
+                  <select class="selectpicker" data-width="100%">
+                    <option>Апартаменты + Выезд</option>
+                    <option>Апартаменты</option>
+                    <option>Выезд</option>
+                  </select>
+                </div>
+                <div class="form-horizont">
+                  <span class="form-horizont__text">Возраст:</span>
+                  <select class="selectpicker" data-width="100%">
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                  </select>
+                </div>
+                <div class="form-horizont">
+                  <span class="form-horizont__text">Грудь</span>
+                  <select class="selectpicker" data-width="100%">
+                    <option>3 размер</option>
+                    <option>4 размер</option>
+                    <option>5 размер</option>
+                    <option>6 размер</option>
+                  </select>
+                </div>
+                <label class="form-horizont">
+                  <span class="form-horizont__text">Рост</span>
+                  <input class="form-horizont__control" type="text" value="162см">
+                </label>
+              </div>
+            </div>
+            <label class="form-horizont form-horizont--textaria">
+              <span class="form-horizont__text">О себе</span>
+              <textarea class="form-horizont__control form-horizont__control--textarea" rows="4" placeholder="Введите текст"></textarea>
+            </label>
+          </fieldset>
+          <fieldset class="field-checkbox">
+            <div class="form-profile__row">
+              <div class="form-profile__column">
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-1">
+                  <label class="form-profile__switch" for="check-1">Анальный секс</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-2">
+                  <label class="form-profile__switch" for="check-2">Апартаменты</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-3">
+                  <label class="form-profile__switch" for="check-3">Глубокий минет</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-4">
+                  <label class="form-profile__switch" for="check-4">Госпожа</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-5">
+                  <label class="form-profile__switch" for="check-5">Групповой секс</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-6">
+                  <label class="form-profile__switch" for="check-6">Доминирование</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-7">
+                  <label class="form-profile__switch" for="check-7">Игрушки</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-8">
+                  <label class="form-profile__switch" for="check-8">Классический секс</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-9">
+                  <label class="form-profile__switch" for="check-9">Лесби</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+              </div>
+              <div class="form-profile__column">
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-10">
+                  <label class="form-profile__switch" for="check-10">Массаж тайский</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-11">
+                  <label class="form-profile__switch" for="check-11">Минет без презерватива</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-12">
+                  <label class="form-profile__switch" for="check-12">Минет в презервативе</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-13">
+                  <label class="form-profile__switch" for="check-13">Окончание на лицо</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-14">
+                  <label class="form-profile__switch" for="check-14">Оральные ласки</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-15">
+                  <label class="form-profile__switch" for="check-15">Поза 69</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-16">
+                  <label class="form-profile__switch" for="check-16">Рабыня</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-17">
+                  <label class="form-profile__switch" for="check-17">Ролевые игры</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+                <div class="form-profile__group">
+                  <input class="form-profile__checkbox" type="checkbox" id="check-18">
+                  <label class="form-profile__switch" for="check-18">Страпон</label>
+                  <input class="form-profile__control" type="number" placeholder="Цена в рублях">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="add-photo">
+            <label class="add-photo__btn">Добавить фото
+              <input type="file" name="photo">
+            </label>
+            <div class="add-photo__load">
+              <div class="add-photo__img">
+                <img src="img/photo/photo-1.jpg" alt="Фото">
+                <button class="add-photo__close">x</button>
+              </div>
+              <div class="add-photo__img">
+                <img src="img/photo/photo-2.jpg" alt="Фото">
+                <button class="add-photo__close">x</button>
+              </div>
+              <div class="add-photo__img">
+                <img src="img/photo/photo-3.jpg" alt="Фото">
+                <button class="add-photo__close">x</button>
+              </div>
+              <div class="add-photo__img">
+                <img src="img/photo/photo-4.jpg" alt="Фото">
+                <button class="add-photo__close">x</button>
+              </div>
+            </div>
+          </fieldset>
+          <button class="form-profile__btn">Сохранить</button>
+        </form>
+      </div>
+@@include('_include/footer.html')

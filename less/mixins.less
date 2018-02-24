@@ -1,0 +1,43 @@
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.btn() {
+  background: @gradient-btn;
+  color: @white;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.btn-quest() {
+  background: @gradient-btn;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 300;
+  cursor: pointer;
+  color: @white;
+
+  &:hover {
+    color: @white;
+  }
+}
+
+.btn-form() {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  background: @gradient-btn;
+  color: @white;
+  border: none;
+}

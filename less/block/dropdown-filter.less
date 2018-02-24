@@ -1,0 +1,39 @@
+.dropdown-filter {
+  display: none;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #545454;
+  overflow: hidden;
+  top: 38px;
+  z-index: 9;
+
+  li {
+
+    &:last-child a {
+      border: none;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      font: @font-dropdown;
+      font-weight: 400;
+      white-space: nowrap;
+      border: 0;
+      padding: 15px;
+      border-bottom: 1px solid #6b6b6b;
+      color: @white;
+      cursor: pointer;
+      transition: @transition-time;
+
+      &:hover {
+        background: @white;
+        color: #545454;
+      }
+    }
+  }
+}

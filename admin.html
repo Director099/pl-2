@@ -1,0 +1,64 @@
+@@include('_include/header.html')
+      <ul class="profile-navigation">
+        <li>
+          <a class="active" href="admin.html">Список профилей</a>
+        </li>
+        <li>
+          <a href="setting.html">Настройки</a>
+        </li>
+        <li>
+          <a href="history.html">История платежей</a>
+        </li>
+        <li>
+          <a href="questions.html">Задать вопрос</a>
+        </li>
+      </ul>
+      <div class="admin-setting">
+        <h3 class="admin-setting__title">Мои профили:</h3>
+        <table class="table">
+          <tr>
+            <td>1</td>
+            <td class="name">Кристина</td>
+            <td>Дней осталось: <strong>16</strong></td>
+            <td class="set-profile">
+              <a href="#">Редактировать профиль</a>
+            </td>
+            <td>
+              <button class="close-profile">X</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="name">Ольга</td>
+            <td>Дней осталось: <strong>10</strong></td>
+            <td class="set-profile">
+              <a href="#">Редактировать профиль</a>
+            </td>
+            <td>
+              <button class="close-profile">X</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="name">Антуанетта</td>
+            <td>Дней осталось: <strong>36</strong></td>
+            <td class="set-profile">
+              <a href="#">Редактировать профиль</a>
+            </td>
+            <td>
+              <button class="close-profile">X</button>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Если нет профиля -->
+        <!-- <p class="text-center">Добро пожаловать в личный кабинет, у вас нету не одного профиля нажмите на кнопку "Добавить профиль"</p> -->
+        <!-- Если нет профиля -->
+
+        <a class="admin-setting__btn" href="profile.html">Добавить профиль
+          <svg class="btn__icon" width="13" height="13">
+            <use xlink:href="#add"/>
+          </svg>
+        </a>
+      </div>
+@@include('_include/footer.html')

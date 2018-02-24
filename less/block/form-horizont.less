@@ -1,0 +1,41 @@
+.form-horizont {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+
+  &__control {
+    &:extend(.form-control);
+
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 0;
+
+    &--textarea {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    min-width: 105px;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "Arial", sans-serif;
+    color: @black;
+
+    @media(max-width: 520px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &--textaria {
+    align-items: flex-start;
+  }
+
+  @media(max-width: 520px) {
+    flex-wrap: wrap;
+  }
+}
+

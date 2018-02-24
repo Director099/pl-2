@@ -1,0 +1,80 @@
+body {
+  font: @font-body;
+  color: @black;
+}
+
+main {
+  padding-top: 20px;
+  min-height: calc(~"100vh - 500px");
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus,
+button:focus {
+  outline: none;
+}
+
+.btn {
+  .btn();
+
+  &__icon {
+    margin-left: 15px;
+    fill: @gray;
+  }
+
+  &--color {
+    background: @gradient-btn;
+  }
+}
+
+.btn-quest {
+  display: inline-block;
+  padding: .375rem .75rem;
+  margin: 10px 20px 10px;
+  .btn-quest();
+}
+
+.btn-delete {
+  .btn();
+  display: block;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 0 !important;
+}
+
+.main-title {
+  position: relative;
+  font: @font-h1;
+  text-align: center;
+  padding: 0px 0 10px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  color: @color-title;
+  text-shadow: 2px 2px 0 #fff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30%;
+    min-width: 180px;
+    height: 1px;
+    transform: translateX(-50%);
+    background: @color-line;
+  }
+}
+
+.main-text span {
+  text-transform: uppercase;
+  color: #464646;
+  font-weight: 700;
+}
+
+.main-text span b {
+  color: @color-2;
+}

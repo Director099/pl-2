@@ -1,0 +1,40 @@
+.add-photo {
+
+  &__btn {
+    .btn();
+    text-transform: initial;
+    margin-bottom: 0;
+
+    input {
+      display: none;
+    }
+  }
+
+  &__load {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__img {
+    &:extend(.col-md-3);
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    margin: 20px 0 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    color: @white;
+    cursor: pointer;
+  }
+}

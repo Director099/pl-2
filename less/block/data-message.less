@@ -1,0 +1,36 @@
+.data-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  background: @filter-bg;
+  border-bottom: 1px solid @color-line;
+
+  &__number {
+    margin-left: 5px;
+    text-decoration: underline;
+    color: @black;
+  }
+
+  &__like {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    .icon {
+      display: inline-block;
+      vertical-align: ;
+      fill: @white;
+      stroke: @color-danger;
+      stroke-width: 2px;
+      transition: @transition-time;
+
+      &.active{
+        fill: @color-danger;
+        stroke: @white;
+        stroke-width: 2px;
+      }
+    }
+  }
+}

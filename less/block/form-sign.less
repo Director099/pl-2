@@ -1,0 +1,35 @@
+.form-sign {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 540px;
+  margin: 0 auto 20px;
+
+  &__control {
+    &:extend(.form-control);
+    margin-bottom: 15px;
+  }
+
+  &__check {
+    display: block;
+    text-align: center;
+    margin: 0 auto 15px;
+    font-size: 17px;
+  }
+
+  &__recovery {
+    text-align: center;
+    font-size: @font-size;
+    margin-top: 15px;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+
+    &.btn-ident {
+      margin-top: 15px;
+      color: @white;
+    }
+  }
+}

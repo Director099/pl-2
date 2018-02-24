@@ -1,0 +1,27 @@
+.profile-navigation {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    a {
+      display: block;
+      padding: 10px 15px;
+      background: @gray;
+      margin-right: 25px;
+      margin-bottom: 20px;
+      color: @white;
+      font-size: @font-size;
+
+      &.active {
+        background: @gradient-btn;
+      }
+    }
+
+    &:last-child a {
+      margin-right: 0px;
+    }
+  }
+}

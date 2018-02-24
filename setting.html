@@ -1,0 +1,36 @@
+@@include('_include/header.html')
+      <ul class="profile-navigation">
+        <li>
+          <a href="admin.html">Список профилей</a>
+        </li>
+        <li>
+          <a class="active" href="setting.html">Настройки</a>
+        </li>
+        <li>
+          <a href="history.html">История платежей</a>
+        </li>
+        <li>
+          <a href="questions.html">Задать вопрос</a>
+        </li>
+      </ul>
+      <div class="admin-setting">
+        <h3 class="admin-setting__title">Настройки профиля:</h3>
+        <form class="form-setting" action="">
+          <div class="form-setting__group">
+            <div class="form-setting__column">
+              <label class="form-label">
+                <span class="form-label__text">Сменить e-mail:</span>
+                <input class="form-label__control" type="text" class="">
+              </label>
+            </div>
+            <div class="form-setting__column">
+              <label class="form-label">
+                <span class="form-label__text">Сменить пароль:</span>
+                <input class="form-label__control" type="text" class="">
+              </label>
+            </div>
+          </div>
+          <button class="btn">Сохранить</button>
+        </form>
+      </div>
+@@include('_include/footer.html')

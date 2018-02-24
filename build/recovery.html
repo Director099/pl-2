@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DosugX</title>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="heart" viewBox="0 0 24 24">
+      <path d="M12 4.435C10.011-.964 0-.162 0 8.003 0 12.071 3.06 17.484 12 23c8.94-5.516 12-10.929 12-14.997C24-.115 14-.996 12 4.435z"/>
+    </symbol>
+    <symbol id="user" viewBox="0 0 24 24">
+      <path d="M20.822 18.096c-3.439-.794-6.641-1.49-5.09-4.418 4.719-8.912 1.251-13.678-3.732-13.678-5.082 0-8.465 4.949-3.732 13.678 1.598 2.945-1.725 3.641-5.09 4.418-2.979.688-3.178 2.143-3.178 4.663l.005 1.241h1.995c0-3.134-.125-3.55 1.838-4.003 2.851-.657 5.543-1.278 6.525-3.456.359-.795.592-2.103-.338-3.815-2.058-3.799-2.578-7.089-1.423-9.026 1.354-2.275 5.426-2.264 6.767-.034 1.15 1.911.639 5.219-1.403 9.076-.91 1.719-.671 3.023-.31 3.814.99 2.167 3.707 2.794 6.584 3.458 1.879.436 1.76.882 1.76 3.986h1.995l.005-1.241c0-2.52-.199-3.975-3.178-4.663z"/>
+    </symbol>
+    <symbol id="dollar" viewBox="0 0 24 24">
+      <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4 14.083c0-2.145-2.232-2.742-3.943-3.546-1.039-.54-.908-1.829.581-1.916.826-.05 1.675.195 2.443.465l.362-1.647c-.907-.276-1.719-.402-2.443-.421v-1.018h-1v1.067c-1.945.267-2.984 1.487-2.984 2.85 0 2.438 2.847 2.81 3.778 3.243 1.27.568 1.035 1.75-.114 2.011-.997.226-2.269-.168-3.225-.54l-.455 1.644c.894.462 1.965.708 3 .727v.998h1v-1.053c1.657-.232 3.002-1.146 3-2.864z"/>
+    </symbol>
+    <symbol id="quest" viewBox="0 0 24 24">
+      <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1.25 17c0 .69-.559 1.25-1.25 1.25-.689 0-1.25-.56-1.25-1.25s.561-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25zm1.393-9.998c-.608-.616-1.515-.955-2.551-.955-2.18 0-3.59 1.55-3.59 3.95h2.011c0-1.486.829-2.013 1.538-2.013.634 0 1.307.421 1.364 1.226.062.847-.39 1.277-.962 1.821-1.412 1.343-1.438 1.993-1.432 3.468h2.005c-.013-.664.03-1.203.935-2.178.677-.73 1.519-1.638 1.536-3.022.011-.924-.284-1.719-.854-2.297z"/>
+    </symbol>
+    <symbol id="right-arrow" viewBox="0 0 476.213 476.213"><path fill="#666" d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607z"/></symbol>
+    <symbol id="add" viewBox="0 0 42 42">
+      <path d="M42 20H22V0h-2v20H0v2h20v20h2V22h20z"/>
+    </symbol>
+    <symbol id="stars" viewBox="0 0 28.5 26.187">
+      <path id="Polygon_3" data-name="Polygon 3" class="cls-1" d="M938.6 753.4l-7.422 6.731 1.768 9.463-8.75-4.519-8.87 4.8 2.013-9.524-7.25-6.494 10-1.367 4.389-8.818 4.164 8.679z" transform="translate(-910.094 -743.688)" />
+    </symbol>
+  </svg>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Close</button>
+          <button type="button" class="btn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="img-fluid" src="img/logo.jpg" alt="Логотип">
+    </a>
+    <p class="page-header__tagline">Лучшие VIP знакомства и досуг уфы</p>
+  </header>
+  <div class="navigation">
+    <div class="navigation__container">
+      <nav class="navigation__navbar navbar-expand-xl">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="main-navigation">
+            <li class="main-navigation__item">
+              <a href="#">100% фото</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#">элитные</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#">дешевые</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="x-forum.html">Х-Форум</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="favorites.html">избранное</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="sign.html">Добавить анкету</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="filter">
+    <form class="filter__container" action="">
+      <ul class="navigation-filter">
+        <li class="navigation-filter__item">
+          <select>
+            <option>Цена за час</option>
+            <option>1000 руб. (1)</option>
+            <option>1400 руб. (2)</option>
+            <option>1800 руб. (3)</option>
+            <option>2400 руб. (4)</option>
+          </select>
+        </li>
+        <li class="navigation-filter__item">
+          <select>
+            <option>Возраст</option>
+            <option>18 Лет (2)</option>
+            <option>19 Лет (3)</option>
+            <option>20 Лет (4)</option>
+          </select>
+        </li>
+        <li class="navigation-filter__item">
+          <select>
+            <option>Размер груди</option>
+            <option>1 размер (1)</option>
+            <option>2 размер (1)</option>
+            <option>3 размер (1)</option>
+          </select>
+        </li>
+        <li class="navigation-filter__item">
+          <select>
+            <option>Район</option>
+            <option>Дзержинский (1)</option>
+            <option>Железнодорожный (2)</option>
+            <option>Центральный (16)</option>
+          </select>
+        </li>
+        <li class="navigation-filter__item">
+          <select>
+            <option>Услуги</option>
+            <option>Апартаменты (24)</option>
+            <option>Выезд (14)</option>
+            <option>Анальный секс (7)</option>
+          </select>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <div class="main-content">
+    <div class="main-content__container">
+      <main role="main">
+
+      <h1 class="main-title">Восстанавление пароля</h1>
+      <p class="text-center">Для восстанавления пароля оставьте свой E-mail</p>
+      <form class="form-sign" action="">
+        <input class="form-sign__control" type="email" placeholder="Ваш E-mail:" required>
+        <button class="btn">Отправить</button>
+      </form>
+      </main>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <div class="page-footer__menu">
+      <ul class="section-menu">
+        <li class="section-menu__item">
+          <a href="#">Архив</a>
+        </li>
+        <li class="section-menu__item">
+          <a href="#">Пользовательское соглашение + 18</a>
+        </li>
+        <li class="section-menu__item">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="section-menu__item">
+          <a href="#">Добавить анкету</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__info">
+      <p class="page-footer__warning">Администрация сайта не несет ответственности за информацию, содержащуюся в рекламных объявлениях.</p>
+      <p class="page-footer__ban">Если Вам не исполнилось 18 лет, просьба покинуть сайт.</p>
+      <a class="page-footer__offer" href="#">Пользовательское соглашение</a>
+      <p class="page-footer__copyright">ufalux.org ©2007-2018</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+.forum {
+  margin-bottom: 20px;
+  border: 1px solid @color-line;
+  border-radius: @border-radius;
+  overflow: hidden;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid @color-line;
+    padding: 10px 15px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__name {
+    width: 100%;
+    background: url("img/sprite/mail.svg") no-repeat 0px 50%;
+    padding-left: 40px;
+    padding-right: 10px;
+    background-size: 20px;
+
+    h3 {
+      margin: 0px;
+      font-size: 16px;
+
+      a {
+        color: @black;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__topic {
+    width: 70px;
+    padding: 10px;
+    border-left: 1px solid @color-line;
+    text-align: center;
+  }
+
+  &__message {
+    width: 110px;
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid @color-line;
+    border-right: 1px solid @color-line;
+  }
+
+  &__update {
+    width: 250px;
+    padding-left: 20px;
+
+    a {
+      display: block;
+      color: @black;
+      text-decoration: underline;
+    }
+  }
+}

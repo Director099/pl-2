@@ -1,0 +1,44 @@
+@@include('_include/header.html')
+@@include('_include/forum-navigation.html')
+  <h1 class="main-title">Пойск</h1>
+  @@include('_include/breadcrumbs.html')
+  <div class="forum">
+    <form class="form-search">
+      <label class="form-search__group">
+        <span>Поиск:</span>
+        <input class="form-search__control" type="text">
+      </label>
+      <label class="form-search__group">
+        <span>Форум:</span>
+        <div class="form-search__control">
+          <select>
+            <option value="">Все форумы</option>
+            <option value="">100% Анкеты</option>
+            <option value="">Какие темы еще создать? как вам новый форум? Ваши предложения для сайта?</option>
+          </select>
+        </div>
+      </label>
+      <label class="form-search__group">
+        <span>Период:</span>
+        <div class="form-search__control">
+          <select>
+            <option value="">За все время</option>
+            <option value="">Сегодня</option>
+            <option value="">7 дней</option>
+          </select>
+        </div>
+      </label>
+      <label class="form-search__group">
+        <span>Упорядочить:</span>
+        <div class="form-search__control">
+          <select>
+            <option value="">по релевантности</option>
+            <option value="">по дате</option>
+            <option value="">по темам</option>
+          </select>
+        </div>
+      </label>
+      <button class="form-search__btn">Поиск</button>
+    </form>
+  </div>
+@@include('_include/footer.html')

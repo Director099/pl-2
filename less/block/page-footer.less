@@ -1,0 +1,38 @@
+.page-footer {
+  // padding: 30px 15px;
+  text-align: center;
+
+
+  &__warning {
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  &__ban {
+    color: @color-danger;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__offer {
+    display: inline-block;
+    text-decoration: underline;
+    color: @white;
+    margin-bottom: 10px;
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &__menu {
+    &:extend(.container);
+  }
+
+  &__info {
+    padding: 30px 15px;
+    background: @black;
+    color: @white;
+  }
+}

@@ -1,0 +1,47 @@
+@@include('_include/header.html')
+      <ul class="profile-navigation">
+        <li>
+          <a href="admin.html">Список профилей</a>
+        </li>
+        <li>
+          <a href="setting.html">Настройки</a>
+        </li>
+        <li>
+          <a href="history.html">История платежей</a>
+        </li>
+        <li>
+          <a class="active" href="questions.html">Задать вопрос</a>
+        </li>
+      </ul>
+      <div class="admin-setting">
+        <h3 class="admin-setting__title">Есть вопросы?</h3>
+        <table class="table-message">
+          <thead>
+            <tr>
+              <th>Пользователь</th>
+              <th>Сообщение</th>
+              <th>Дата</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Консультант</td>
+            <td>Здравствуйте, я консультант</td>
+            <td>10.10.2017</td>
+          </tr>
+          <tr>
+            <td>Admin Plush</td>
+            <td>Здравствуйте, а я админ у меня проблемы</td>
+            <td>13.11.2017</td>
+          </tr>
+           <tr>
+            <td>Консультант</td>
+            <td>Хорошо</td>
+            <td>10.10.2017</td>
+          </tr>
+        </table>
+        <form class="form-message" action="">
+          <textarea class="form-message__message" rows="10" placeholder="Ваше сообщение:" required></textarea>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+@@include('_include/footer.html')

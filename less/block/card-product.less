@@ -1,0 +1,25 @@
+.card-product {
+  &:extend(.row);
+
+  &__precent {
+    position: absolute;
+    top: -7px;
+    left: 5px;
+  }
+
+  &__column {
+    &:extend(.col-lg-6);
+
+    img {
+      margin-bottom: 10px;
+      box-shadow: @shadow;
+      border-radius: @border-radius;
+    }
+
+    &--betwen {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

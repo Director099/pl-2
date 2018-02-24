@@ -1,0 +1,131 @@
+.form-profile {
+  margin-top: 20px;
+
+  &__row {
+    &:extend(.row);
+  }
+
+  &__column {
+    &:extend(.col-lg-6);
+  }
+
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font: 300 17px "Arial", sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      right: 0;
+      height: 1px;
+      width: calc(~"100% + 40px");
+      background: #CDD1DA;
+    }
+  }
+
+  &__all-group {
+    margin-bottom: 20px;
+  }
+
+  &__switch {
+    position: relative;
+    display: block;
+    min-width: 230px;
+    font-size: 15px;
+    padding-right: 50px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    color: @black;
+    cursor: pointer;
+
+    &--subscription {
+      display: inline-block;
+      min-width: auto;
+      margin-right: 0;
+
+      @media(max-width: 520px) {
+        min-width: auto !important;
+        margin-bottom: 0px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 28px;
+      height: 15px;
+      border-radius: 13px;
+      background: #CDD1DA;
+      box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: 15px;
+      width: 11px;
+      height: 11px;
+      border-radius: 10px;
+      background: #FFF;
+      box-shadow: 0 2px 5px rgba(0,0,0,.3);
+      transition: all .2s;
+    }
+
+    @media(max-width: 520px) {
+      min-width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    min-height: 31px;
+    margin-bottom: 10px;
+
+    @media(max-width: 520px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__control {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    display: none;
+  }
+
+  &__btn {
+    .btn();
+    margin-top: 20px;
+    text-transform: initial;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.form-profile__checkbox:checked + .form-profile__switch::after {
+    content: '';
+    right: 2px;
+    background: @color-2;
+}
+
+.form-profile__checkbox:checked + .form-profile__switch + .form-profile__control {
+    display: block;
+}

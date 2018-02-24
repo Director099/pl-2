@@ -1,0 +1,62 @@
+.girl-info {
+  border-radius: @border-radius;
+  overflow: hidden;
+  box-shadow: @shadow;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: @gradient-btn;
+    color: @white;
+  }
+
+  &__name {
+    color: @color-price;
+    font: @font-name;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  &__phone {
+    font: @font-phone;
+    color: @white;
+
+    &:hover {
+      color: @white;
+    }
+  }
+
+  &__btn {
+    border-radius: 10px;
+    color: @white;
+    padding: 5px 15px;
+    background: transparent;
+    border: 1px solid @gray-dark;
+    text-transform: uppercase;
+
+    .icon {
+      display: inline-block;
+      vertical-align: sub;
+      fill: @color-price;
+      margin-left: 10px;
+    }
+  }
+
+  &__price {
+    width: 100%;
+    max-width: 100%;
+    background: @color-price;
+
+    tr:first-child {
+      border-bottom: 1px solid fade(@color-line, 30%);
+    }
+
+    td {
+      padding: 10px 15px;
+      min-width: 200px;
+      width: 1%;
+    }
+  }
+}

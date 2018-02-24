@@ -1,0 +1,17 @@
+.navigation {
+  background: url("img/pattern/nav-bg.jpg");
+  background-size: cover;
+  border-bottom: 1px solid @white;
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__navbar {
+    padding: 10px;
+
+    @media(min-width: 1200px) {
+      padding: 0;
+    }
+  }
+}

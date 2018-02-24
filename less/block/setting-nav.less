@@ -1,0 +1,43 @@
+.setting-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+    &__item {
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        transition: @transition-time;
+        color: @gray-light;
+        border: 1px solid @gray-lightest;
+        font-size: 17px;
+        background: @gray-lightesten;
+
+        .tab__icon {
+          fill: @gray-light;
+          transition: @transition-time;
+        }
+
+        span {
+          padding-left: 15px;
+        }
+
+        &.active {
+          background: @white;
+          color: @gray-dark;
+
+          .tab__icon {
+            fill: @gray-dark;
+          }
+        }
+      }
+    }
+
+   &__item:last-child a {
+      border-right: 1px solid @gray-lightest;
+    }
+  }

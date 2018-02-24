@@ -1,0 +1,83 @@
+@@include('_include/header.html')
+      <ul class="profile-navigation">
+        <li>
+          <a class="active" href="admin.html">Список профилей</a>
+        </li>
+        <li>
+          <a href="setting.html">Настройки</a>
+        </li>
+        <li>
+          <a href="history.html">История платежей</a>
+        </li>
+        <li>
+          <a href="questions.html">Задать вопрос</a>
+        </li>
+      </ul>
+      <div class="admin-setting">
+        <div class="admin-setting__nav">
+          <ul class="setting-nav" role="tablist">
+            <li class="setting-nav__item">
+              <a class="active" href="profile.html">
+                <svg class="tab__icon" width="18" height="18">
+                  <use xlink:href="#user"/>
+                </svg>
+                <span>Профиль</span>
+              </a>
+            </li>
+            <li class="setting-nav__item">
+              <a href="subscription.html">
+                <svg class="tab__icon" width="18" height="18">
+                  <use xlink:href="#dollar"/>
+                </svg>
+                <span>Подписка</span>
+              </a>
+            </li>
+          </ul>
+          <a class="admin-setting__back" href="admin.html">Вернуться к списку
+            <svg class="tab__icon" width="18" height="18">
+              <use xlink:href="#right-arrow"/>
+            </svg>
+          </a>
+        </div>
+        <div class="subscription">
+          <div class="subscription__row">
+            <div class="subscription__column">
+              <p class="subscription__text"><strong> Длительность подписки:</strong> 27 дней</p>
+            </div>
+            <div class="subscription__column">
+              <a class="subscription__btn" href="history.html">Ваши платежи</a>
+            </div>
+            <div class="subscription__column">
+              <form action="">
+                <input class="form-profile__checkbox" type="checkbox" id="activte">
+                <label class="form-profile__switch form-profile__switch--subscription" for="activte">Активировать 100%:</label>
+              </form>
+            </div>
+          </div>
+          <ul class="sub-selection">
+            <ll class="sub-selection__item">
+              <h3 class="sub-selection__title">Активировать на день</h3>
+              <p class="sub-selection__price">
+                <strong class="sub-selection__new-price">100</strong>
+              </p>
+              <a class="btn" href="#">Активировать</a>
+            </ll>
+            <ll class="sub-selection__item">
+              <h3 class="sub-selection__title">Активировать на месяц</h3>
+              <p class="sub-selection__price">
+                <strong class="sub-selection__new-price">1000</strong>
+              </p>
+              <a class="btn" href="#">Активировать</a>
+            </ll>
+            <ll class="sub-selection__item">
+              <h3 class="sub-selection__title">Активировать на год</h3>
+              <p class="sub-selection__price">
+                <del class="sub-selection__old-price">12000</del>
+                <strong class="sub-selection__new-price">10000</strong>
+              </p>
+              <a class="btn" href="#">Активировать</a>
+            </ll>
+          </ul>
+
+        </div>
+@@include('_include/footer.html')

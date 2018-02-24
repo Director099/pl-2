@@ -1,0 +1,72 @@
+.navigation-filter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    position: relative;
+    width: 17.5%;
+    background: @gray-darker;
+    border-bottom: 1px solid @gray-darken;
+
+    select {
+      width: 100%;
+      background: @gray-darker url("img/icon/arrow.png") no-repeat 97%;
+      background-size: 17px;
+      border: none;
+      color: @white;
+      padding: 12px;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 13px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+    }
+
+    @media(min-width: @screen-lg) {
+      &::after {
+        content: '';
+        position: absolute;
+        right: -10%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: darken(@filter-bg, 20%);
+      }
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+
+    &:hover {
+      .dropdown-filter {
+        display: block;
+      }
+    }
+
+    @media(max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    color: @white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: @transition-time;
+
+    &:hover {
+      color: @white;
+    }
+  }
+
+  @media(max-width: 991px) {
+    flex-direction: column;
+  }
+}

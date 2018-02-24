@@ -1,0 +1,126 @@
+.information {
+  position: relative;
+  background: @white;
+
+  &__precent {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .table {
+    background: @white;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    margin: 0;
+
+    &__name {
+      color: @color-2;
+      font: @font-name;
+    }
+
+    &__phone {
+      display: block;
+      color: @black;
+      font: @font-phone;
+      vertical-align: text-top;
+      transition: @transition-time;
+      text-align: right;
+
+      .fa {
+        color: @color-2;
+      }
+
+      &:hover {
+        color: @color-2;
+        transition: @transition-time;
+      }
+
+      @media(max-width: 1199px) {
+        font-size: 19px;
+      }
+    }
+
+    &__favorite {
+      display: block;
+      font-size: 16px;
+      background: @white;
+      border: 1px solid @gray-lighter;
+      padding: 5px 10px;
+      margin-left: auto;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: @filter-bg;
+      transition: @transition-time;
+
+      &.active .services__icon {
+        fill: #c10535;
+      }
+
+      &:hover {
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+      }
+    }
+
+    thead {
+      th {
+        border: none;
+        padding: 20px 15px;
+      }
+
+      .table__group {
+        color: @black;
+        font-weight: 300;
+      }
+    }
+
+    tbody {
+      tr {
+        transition: @transition-time;
+
+        td {
+          font-size: 16px;
+          padding: 10px 15px;
+          font-weight: 300;
+          width: 1%;
+          min-width: 200px;
+          color: @black;
+          border-top: 0;
+        }
+
+        &:nth-child(even) {
+          background: @gray-lightesten;
+        }
+
+        // &:hover {
+        //   background: fade(@gray-lightesten, 50%);
+        // }
+      }
+    }
+
+    &--bottom {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__description {
+    position: relative;
+    font-family: "Arial", sans-serif;
+    padding: 15px;
+    background: @white;
+    color: @gray-darken;
+    box-shadow: @shadow;
+    border-radius: @border-radius;
+    font-size: 17px;
+
+    strong {
+      display: block;
+      font-size: @font-size;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      color: @black;
+      font-weight: 600;
+    }
+  }
+}
